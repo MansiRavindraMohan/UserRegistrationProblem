@@ -8,19 +8,19 @@ namespace UserRegistrationProblem
         {
             Console.WriteLine("Welcome to User Registration Problem");
 
-            FirstName FName = new FirstName();
-            Console.WriteLine("Please enter the First name:");
+            FirstName LName = new FirstName();
+            Console.WriteLine("Please enter the Last name:");
 
-            string firstName = Console.ReadLine();
-            bool val = FName.validateFirstName(firstName);
+            string lastName = Console.ReadLine();
+            bool val = LName.validateFirstName(lastName);
 
             if (val)
             {
-                Console.WriteLine("First name matched");
+                Console.WriteLine("Last name matched");
             }
             else
             {
-                Console.WriteLine("First name not matched");
+                Console.WriteLine("Last name not matched");
             }
         }
     }
