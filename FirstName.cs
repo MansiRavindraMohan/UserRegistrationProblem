@@ -9,10 +9,10 @@ namespace UserRegistrationProblem
 {
     public class FirstName
     {
-        public const string Regex_MobileNo = "^[0-9]{1,2}[ ][0-9]{10}$";
-        public bool ValidateMobileNumber(string MobileNo)
+        public const string Regex_Password = "^[!@#$%^&*?<>0-9a-zA-Z]{8}$";
+        public bool ValidatePassword(string Password)
         {
-            return Regex.IsMatch(MobileNo, Regex_MobileNo);
+            return Regex.IsMatch(Password, Regex_Password);
         }
     }
 }
