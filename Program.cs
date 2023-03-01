@@ -8,19 +8,19 @@ namespace UserRegistrationProblem
         {
             Console.WriteLine("Welcome to User Registration Problem");
 
-            FirstName Email = new FirstName();
-            Console.WriteLine("Please enter the email:");
+            FirstName MobileNumber = new FirstName();
+            Console.WriteLine("Please enter the mobile number:");
 
-            string email = Console.ReadLine();
-            bool val = Email.ValidateEmail(email);
+            string MobileNo = Console.ReadLine();
+            bool val = MobileNumber.ValidateMobileNumber(MobileNo);
 
             if (val)
             {
-                Console.WriteLine("Email matched");
+                Console.WriteLine("Mobile number matched");
             }
             else
             {
-                Console.WriteLine("Email not matched");
+                Console.WriteLine("Mobile number not matched");
             }
         }
     }
