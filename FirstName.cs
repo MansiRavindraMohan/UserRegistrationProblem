@@ -9,7 +9,7 @@ namespace UserRegistrationProblem
 {
     public class FirstName
     {
-        public const string Regex_Password = "^[!@#$%^&*?<>0-9a-zA-Z]{8}$";
+        public const string Regex_Password = "^[A-Z]{1}[!@#$%^&*?<>0-9a-zA-Z]{7}$";
         public bool ValidatePassword(string Password)
         {
             return Regex.IsMatch(Password, Regex_Password);
